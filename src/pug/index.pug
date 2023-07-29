@@ -1,0 +1,14 @@
+extends layout/app 
+
+block page 
+  include chunk/header 
+
+  h1.title Головна сторінка34456
+  p Доброго Вам дня &&&&
+  img(src="img/03.jpg", alt="Фото дня", width="700")
+  
+  ul.news 
+    each item in news 
+      li= item.name
+
+  include chunk/footer 
